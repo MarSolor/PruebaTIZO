@@ -8,6 +8,7 @@
     "test-chrome": "cypress run --spec cypress/e2e/CasosPrueba/Todos.cy.js --browser chrome",
     "test-firefox": "cypress run --spec cypress/e2e/CasosPrueba/Todos.cy.js --browser firefox",
     "test-edge": "cypress run --spec cypress/e2e/CasosPrueba/Todos.cy.js --browser edge"
+    
   },
   "author": "Mario Ortega",
   "license": "ISC",
