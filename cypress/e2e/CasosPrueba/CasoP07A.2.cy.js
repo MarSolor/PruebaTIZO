@@ -3,7 +3,7 @@ describe("Navegación por filtro busqueda de detalle de producto", () => {
     beforeEach(() => {
         cy.visit("https://www.tizo.com.ni");
         // Cerrar modal si está presente
-        cy.get('#mat-mdc-dialog-title-0 > .mat-icon').click({ timeout: 10000 });
+        cy.get('#mat-mdc-dialog-title-0 > .mat-icon').click({ force: true });
     });
 
     it("Búsqueda de producto y aplicación de filtros", () => {
