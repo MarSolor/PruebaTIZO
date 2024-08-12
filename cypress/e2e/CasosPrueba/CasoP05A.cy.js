@@ -2,7 +2,7 @@ describe("Test Suite - Navegación por Catálogo de Tiendas Asociadas", () => {
 
     beforeEach(() => {
         cy.visit("https://www.tizo.com.ni");
-        cerrarModal();
+        cy.get('#mat-mdc-dialog-title-0 > .mat-icon').click();
     });
 
     it("Validar navegación por catálogo de tiendas", () => {
@@ -17,10 +17,7 @@ describe("Test Suite - Navegación por Catálogo de Tiendas Asociadas", () => {
         return false;
     });
 
-    // Función para cerrar el modal informativo
-    function cerrarModal() {
-        cy.get('#mat-mdc-dialog-title-0 > .mat-icon').click();
-    }
+    
 
     // Función para navegar a las tiendas más cotizadas y luego salir
     function navegarATiendasMasCotizadas() {
