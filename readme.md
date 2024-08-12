@@ -1,9 +1,11 @@
 1. Instalar Cypress
+   
 npm init -y
+
 npm install cypress --save-dev
 
 
-2. Visualizar Casos de Prueba en Formato de Video:
+3. Visualizar Casos de Prueba en Formato de Video:
 
 Para abrir el asistente de Cypress y visualizar los casos de prueba en formato de video, utiliza el siguiente comando:
 
