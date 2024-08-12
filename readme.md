@@ -14,8 +14,8 @@ npx cypress open
 
 Para ejecutar las pruebas de los casos de uso y ver los resultados en la consola en diferentes navegadores, utiliza uno de los siguientes comandos:
 
-cypress run --spec cypress/e2e/CasosPrueba/Todos.cy.js --browser chrome
+npx cypress run --spec cypress/e2e/CasosPrueba/Todos.cy.js --browser chrome
 
-cypress run --spec cypress/e2e/CasosPrueba/Todos.cy.js --browser firefox
+npx cypress run --spec cypress/e2e/CasosPrueba/Todos.cy.js --browser firefox
 
-cypress run --spec cypress/e2e/CasosPrueba/Todos.cy.js --browser edge
+npx cypress run --spec cypress/e2e/CasosPrueba/Todos.cy.js --browser edge
