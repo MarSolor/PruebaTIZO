@@ -1,4 +1,4 @@
-describe("Navegación por catálogo de detalle de producto", () => {
+describe("Navegación por filtros de catalogo", () => {
 
     beforeEach(() => {
         // Visitar el sitio web y cerrar el modal inicial
