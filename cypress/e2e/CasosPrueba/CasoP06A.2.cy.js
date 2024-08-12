@@ -3,7 +3,7 @@ describe("Navegación por filtros de catalogo", () => {
     beforeEach(() => {
         // Visitar el sitio web y cerrar el modal inicial
         cy.visit("https://www.tizo.com.ni");
-        cerrarModal();
+        cy.get('#mat-mdc-dialog-title-0 > .mat-icon').click().wait(100);
     });
 
     it("Filtro de catálogo de productos", () => {
@@ -26,11 +26,7 @@ describe("Navegación por filtros de catalogo", () => {
         return false;
     });
 
-    // Función para cerrar el modal inicial
-    function cerrarModal() {
-        cy.get('#mat-mdc-dialog-title-0 > .mat-icon').click().wait(100);
-    }
-
+   
     // Función para aplicar filtro de precio
     function aplicarFiltroPrecio(tipo) {
         cy.get('.justify-end > .mat-mdc-menu-trigger').click().wait(100);
