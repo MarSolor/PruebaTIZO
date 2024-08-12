@@ -2,7 +2,7 @@ describe("Navegación por Catálogo de Detalle de Producto", () => {
 
     beforeEach(() => {
         cy.visit("https://www.tizo.com.ni");
-        cerrarModal();
+        cy.get('#mat-mdc-dialog-title-0 > .mat-icon').click();
     });
 
     it("Validar navegación por catálogo de producto A", () => {
@@ -19,11 +19,7 @@ describe("Navegación por Catálogo de Detalle de Producto", () => {
         return false;
     });
 
-    // Función para cerrar el modal informativo
-    function cerrarModal() {
-        cy.get('#mat-mdc-dialog-title-0 > .mat-icon').click();
-    }
-
+    
     // Función para navegar al catálogo de lo más vendido
     function navegarACatalogoMasVendido() {
         cy.get(':nth-child(1) > .pr-5 > :nth-child(2) > .underline > b').click();
@@ -36,7 +32,7 @@ describe("Navegación por Catálogo de Detalle de Producto", () => {
 
     // Función para aplicar el filtro de marca Adidas
     function aplicarFiltroMarcaAdidas() {
-        cy.get('#Adidas').check();
+        cy.get('#Adidas').click();
     }
 
     // Función para quitar el filtro de marca Adidas
