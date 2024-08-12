@@ -1,4 +1,4 @@
-describe("Navegación por catálogo de detalle de producto", () => {
+describe("Navegación por filtro busqueda de detalle de producto", () => {
 
     beforeEach(() => {
         cy.visit("https://www.tizo.com.ni");
