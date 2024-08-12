@@ -1,0 +1,18 @@
+{
+  "name": "autotizo_mario",
+  "version": "1.0.0",
+  "description": "Pruebas automatizadas Mario Ortega",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open",
+    "test-chrome": "cypress run --spec cypress/e2e/CasosPrueba/Todos.cy.js --browser chrome",
+    "test-firefox": "cypress run --spec cypress/e2e/CasosPrueba/Todos.cy.js --browser firefox",
+    "test-edge": "cypress run --spec cypress/e2e/CasosPrueba/Todos.cy.js --browser edge"
+  },
+  "author": "Mario Ortega",
+  "license": "ISC",
+  "keywords": [],
+  "devDependencies": {
+    "cypress": "^13.13.2"
+  }
+}
